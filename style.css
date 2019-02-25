@@ -1,0 +1,103 @@
+@media screen and (max-width: 480px) {
+    .block-1 {
+        color: red;
+    }
+    .row-5 {
+        flex-direction: column;
+    }
+    .body {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .block-1 {
+        color: green;
+    }
+    .block-3 {
+        float: left;
+        width: 49%;
+    }
+    .block-3:not(:nth-child(2n)),
+    .block-5:not(:nth-child(2n))
+     {
+        margin-right: 2%;
+    }
+    .block-5 {
+        width: 49%;
+    }
+    .body {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .block-1 {
+        color:blue;
+    }
+    .block-2 {
+        float: left;
+        width: 49%;
+    }
+    .block-2:not(:nth-child(2n)),
+    .block-4:not(:nth-child(2n))
+     {
+        margin-right: 2%;
+    }
+    .block-3 {
+        float: left;
+        width: 24%;
+    }
+    .block-3:not(:nth-child(4n)),
+    .block-5:not(:nth-child(4n))
+     {
+        margin-right: 1.333333%;
+    }
+    .block-4 {
+        width: 49%;
+    }
+    .block-5 {
+        width: 24%;
+    }
+    .body {
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .block-2,
+    .block-3 {
+    }
+    .row-4 {
+        flex-direction: column;
+    }
+    
+}
+.block-2,
+.block-4 {
+    background-color: green;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.block-3,
+.block-5 {
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: green;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.row-4,
+.row-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block-6 {
+    font-size: 1.5em;
+}
